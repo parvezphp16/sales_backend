@@ -1,0 +1,20 @@
+{
+  "name": "sales_backend",
+  "version": "1.0.0",
+  "description": "It is a demo project for Segwitz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Parvez Alam / 9971675585",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "dateformat": "^5.0.3",
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  }
+}

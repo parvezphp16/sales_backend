@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "95ebb544-2cac-43b0-aed4-f7a3e2593297",
+		"name": "Segwitz - Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sales Report - api/sale/sales?statsBy=weekly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/sale/sales?statsBy=weekly",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sale",
+						"sales"
+					],
+					"query": [
+						{
+							"key": "statsBy",
+							"value": "weekly",
+							"description": "daily/weekly/monthly"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Sales Report - api/sale/sales",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"Parvez Alam\",\r\n  \"amount\": 20.89,\r\n  \"date\": \"2022-03-28 15:48\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/sale/sales",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sale",
+						"sales"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
